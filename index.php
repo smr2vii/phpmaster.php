@@ -5,13 +5,13 @@
 <html>
     
     <head>
-        <title> As valdau HTML<?php print "ir PHP";?> ! </title>
+        <title> <?php print 'As,' .  date ('l') . 'ir PHP'; ?> ! </title>
     </head>
     
     <body>
     
-        <h1>Vardas - HTML ir <?php print "ir PHP";?> asas/e! </h1>
-        <p>Moku kurti statini turini. Atidaryta: <?php print date('Y-m-d H:i:s');?></p>
+        <h1> Vardas - HTML <?php print 'ir PHP';?> asas/e jau nuo <?php print date('Y')?></h1>
+        <p> Viskas prasidejo <?php print date('m') . ' menesio ' . date('d') . ' diena!';?>!</p>
     
     </body>
     
