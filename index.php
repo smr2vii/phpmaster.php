@@ -1,21 +1,36 @@
 <?php 
- print date('Y-m-d H:i:s');
+
+
 ?>
 
 <html>
-    
+
     <head>
-        <title> <?php print 'As,' .  date ('l') . 'ir PHP'; ?> ! </title>
+        
+        <title> PHP! </title>
+        <style>
+            body {
+                background: rgb(<?php print rand(1, 255) . ',' . rand(1, 255) . ',' .rand(1, 255); ?>)
+                    
+            }
+            
+            h1{
+                font-size: <?php print rand(20, 50) ?>
+            }
+            
+            p{
+                color: rgb(<?php print rand(1,255) . ',' . rand(1, 255) . ',' . rand(1, 255); ?>)
+            }
+        </style>
     </head>
     
     <body>
-    
-        <h1> Vardas - HTML <?php print 'ir PHP';?> asas/e jau nuo <?php print date('Y')?></h1>
-        <p> Viskas prasidejo <?php print date('m') . ' menesio ' . date('d') . ' diena!';?>!</p>
-    
+        <h1> As keiciu dydi!</h1>
+        <p> As keiciu spalva!</p>
     </body>
     
+
 </html>
 
 
- 
+
