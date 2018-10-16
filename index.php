@@ -1,5 +1,1 @@
-<?php echo "Kas?Kaip?Kodel?"; ?>
-
-<html>
-    
-    <body>
+<?php echo "Veikia be/su Git"; ?>
