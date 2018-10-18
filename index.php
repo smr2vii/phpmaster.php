@@ -1,57 +1,25 @@
 <?php
-$sunny = rand(0, 1);
-$rain = rand(0, 1);
+$distance = rand(1, 50);
+$fuel_cons = 7.5;
+$fuel_price = 1.3;
+$my_money = 100;
+$cost =$distance * ($fuel_cons / 100) * $my_money;
 
-$class = null;
-$tekstas = null;
-
-
-if ($sunny) {    
-    if ($rain) {    
-        $class = 'sunny-rain';
-        $tekstas = 'Sauleta ir lyja';
-    } else {
-        $class = 'sunny';
-        $tekstas = 'Sauleta';
-    }
+        
+if ($cost > 100) {
+    print $isvada = "Isvada: As sau tai negaliu leisti.";
 } else {
-    if ($rain){  
-        $class = 'cloudy-rain';
-        $tekstas = 'Debesuota ir lyja';
-    } else {    
-        $class = 'cloudy';
-        $tekstas = 'Debesuota';
-    }
+    print $isvada = "Isvada: As sau tai galiu leisti.";
 }
-
 ?>
+
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>if</title>
-        <style>
-            .paveikslelis {
-                background-size: cover;
-                width: 100px;
-                height: 100px;
-            }
-            .sunny{
-               background-image: url("sunny.png") 
-            }
-            .sunny-rain{
-                background-image: url("rainy.png")
-            }
-            .cloudy{
-                background-image: url("sunny.png")
-            }
-            .cloudy-rain{
-                background-image: url("rainy.png")
-            }
-        </style>
+        <title></title>
     </head>
     <body>
-        <div class="paveikslelis <?php print $class;?>"></div>
-        <p><?php print $tekstas;?></p>
+        <div <?php print $isvada;?>></div>
     </body>
 </html>
