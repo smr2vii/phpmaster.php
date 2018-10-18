@@ -1,21 +1,48 @@
 <?php
-$kiek_isgerei = rand(1, 8);
-$barnio_riba = rand(1, 4);
-$bokalai = $kiek_isgerei - $barnio_riba;
-$galejai = ($kiek_isgerei - 4) * -1;
+$bool = true;
+$int = 1;
+$str = "1";
+$flt = 1.23;
+$str2 = "1.23";
+$x = null;
+
+
 
         
-if ($kiek_isgerei > 4) {
-     $bokalai = "Zmona barsis, nes isgerei $bokalai bokalais per daug.";
-}  else {
-    $bokalai = "Zmona nesibars. Siandien galejai isgerti dar $galejai bokalus.";
-}
+if ($bool === $int) {
+     $x = "identiskas";
+} else if ($bool == $int){
+     $x = "lygus";
+} else {
+     $x = "nelygs ir neidentiski";
+   }
+
+
+
+if ($str === $bool) {
+     $y = "identiskas";
+} else if ($str == $bool){
+     $y = "lygus";
+} else {
+     $y = "nelygs ir neidentiski";
+   }
+
+
+if ($flt === $str2) {
+     $z = "identiskas";
+} else if ($flt == $str2){
+     $z = "lygus";
+} else {
+     $z = "nelygs ir neidentiski";
+   }
 ?>
 
 
 <!DOCTYPE html>
 <html>
     <body>
-        <div> <?php print $bokalai;?></div>
+        <div><?php print $x;?></div>
+        <div><?php print $y;?></div>
+        <div><?php print $z;?></div>
     </body>
 </html>
