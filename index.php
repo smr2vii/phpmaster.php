@@ -1,15 +1,17 @@
 <?php
-$distance = rand(1, 50);
-$fuel_cons = 7.5;
-$fuel_price = 1.3;
-$my_money = 100;
-$cost =$distance * ($fuel_cons / 100) * $my_money;
+$grizai_velai = rand(0, 1);
+$grizai_isgeres = rand(0, 1);
+
 
         
-if ($cost > 100) {
-    print $isvada = "Isvada: As sau tai negaliu leisti.";
+if ($grizai_velai && $grizai_isgeres) {
+     $f = "Miegosi and sofos,nes grizai vielai ir isgeres.";
+} else if ($grizai_isgeres) {
+     $f = "Nemiegosi ant sofos nes negrizai velai.";
+} else if ($grizai_velai) {
+     $f = "Nemiegosi and sofos nes negrizai isgeres.";
 } else {
-    print $isvada = "Isvada: As sau tai galiu leisti.";
+    $f = "nieko";
 }
 ?>
 
@@ -20,6 +22,6 @@ if ($cost > 100) {
         <title></title>
     </head>
     <body>
-        <div <?php print $isvada;?>></div>
+        <div> <?php print $f;?></div>
     </body>
 </html>
